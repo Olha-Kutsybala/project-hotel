@@ -1,141 +1,202 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mimino</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
     <header>
-        <div class="container header">
-            <nav class="header__nav">
-                <a href="./index.html" class="logo link">Міміно</a>
-                <ul class="list header__list">
-                    <li><a href="" class="link header__item">Ресторан</a>
-                        <a href="tel:+380955559533" class="link header__contact"><svg width="24" height="24">
-                            <use href="./images/icon.svg#icon-phone"></use>
-                        </svg>
-                            095 555 95 33</a>
-                        </li>
-                    <li><a href="" class="link header__item">Готель
-                        <svg width="24" height="24">
-                            <use href="./images/icon.svg#icon-phone"></use>
-                        </svg>
-                            <a href="tel:+380668491089" class="link header__contact">066 849 10 89</a>
-                        </a></li>
-                </ul>
-            </nav>
-            <ul class="list">
-                <li><a href="" class="link"></a></li>
-                <li><a href="" class="link"></a></li>
-                <li><a href="" class="link"></a></li>
-            </ul>
-        </div>
+      <div class="container header">
+        <a href="./index.html" class="logo link">Mimiho</a>
+        <nav class="header__nav">
+          <ul class="list header__list">
+            <li class="header__item">
+              <a href="" class="link header__link"
+                >Ресторан
+                <div class="header__phone">
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  <a href="tel:+380955559533" class="link header__contact">095 555 95 33</a>
+                </div>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="" class="link header__link"
+                >Готель
+                <div class="header__phone">
+                  <svg width="24" height="24" class="header__icon">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  <a href="tel:+380668491089" class="link header__contact">066 849 10 89</a>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list social">
+            <li class="social__item">
+                <a href="" class="link social__link">
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="" class="link social__link">
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="" class="link social__link">
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-telegram"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+      </div>
     </header>
     <main>
-        <section class="section hero">
-            <div class="container">
-                <h1 class="logo hero__title">Міміно</h1>
-                <h2>Ресторанно-готельний
-                    комплекс</h2>
-                <p>Смак життя 24/7</p>
-                <a href="https://goo.gl/maps/5fHJMBBuwY2Lgnmz8" class="link" target="_blank" rel="noopener noreferrer nofollow">Україна,
-                    м.
-                    Полтава,
-                    вул. Маршала Бірюзова, 15</a>
-                <button type="button">Забронювати столик</button>
-                <button type="button">Забронювати номер</button>
-                <ul class="list">
-                    <li><a href="" class="link"></a></li>
-                    <li><a href="" class="link"></a></li>
-                    <li><a href="" class="link"></a></li>
-                </ul>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <h2>About our restaurant</h2>
-                <p>Amet minim mollit non</p>
-                <a href="./index.html" class="link">Міміно</a>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <img src="" alt="">
-                <img src="" alt="">
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <a href="./index.html" class="link">Міміно</a>
-                <h2>Ресторан</h2>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-                    mollit.</p>
-                <button type="button">Забронювати столик</button>
-                <a href="" class="link">Переглянути меню</a>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <h2>About our hotel</h2>
-                <img src="" alt="">
-                <p>Amet minim mollit non</p>
-                <a href="./index.html" class="link">Міміно</a>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <img src="" alt="">
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <a href="./index.html" class="link">Міміно</a>
-                <h2>Готель</h2>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-                    mollit.</p>
-                <button type="button">Забронювати номер</button>
-                <a href="" class="link">Переглянути ціни</a>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <h2>Contacts</h2>
-                <a href="./index.html" class="link">Міміно</a>
-                <h3>Ресторанно-готельний комплекс</h3>
-                <ul class="list">
-                    <li><a href="" class="link">Ресторан
-                            <a href="tel:+380955559533" class="link">095 555 95 33</a></li>
-                    <li><a href="" class="link">Готель
-                            <a href="tel:+380668491089" class="link">066 849 10 89</a>
-                        </a></li>
-                    <li><a href="https://goo.gl/maps/5fHJMBBuwY2Lgnmz8" class="link" target="_blank"
-                            rel="noopener noreferrer nofollow">Україна, м. Полтава,
-                            вул. Маршала Бірюзова, 15</a></li>
-                </ul>
-            </div>
-        </section>
+      <section class="section hero">
+        <div class="container">
+          <h1 class="logo hero__title">Міміно</h1>
+          <h2>Ресторанно-готельний комплекс</h2>
+          <p>Смак життя 24/7</p>
+          <a
+            href="https://goo.gl/maps/5fHJMBBuwY2Lgnmz8"
+            class="link"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Україна, м. Полтава, вул. Маршала Бірюзова, 15</a
+          >
+          <button type="button">Забронювати столик</button>
+          <button type="button">Забронювати номер</button>
+          <ul class="list">
+            <li><a href="" class="link"></a></li>
+            <li><a href="" class="link"></a></li>
+            <li><a href="" class="link"></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2>About our restaurant</h2>
+          <p>Amet minim mollit non</p>
+          <a href="./index.html" class="link">Міміно</a>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <a href="./index.html" class="link">Міміно</a>
+          <h2>Ресторан</h2>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit.
+          </p>
+          <button type="button">Забронювати столик</button>
+          <a href="" class="link">Переглянути меню</a>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2>About our hotel</h2>
+          <img src="" alt="" />
+          <p>Amet minim mollit non</p>
+          <a href="./index.html" class="link">Міміно</a>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+          <img src="" alt="" />
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <a href="./index.html" class="link">Міміно</a>
+          <h2>Готель</h2>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit.
+          </p>
+          <button type="button">Забронювати номер</button>
+          <a href="" class="link">Переглянути ціни</a>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2>Contacts</h2>
+          <a href="./index.html" class="link">Міміно</a>
+          <h3>Ресторанно-готельний комплекс</h3>
+          <ul class="list">
+            <li>
+              <a href="" class="link header__item"
+                >Ресторан
+                <svg width="24" height="24">
+                  <use href="./images/icon.svg#icon-phone"></use>
+                </svg>
+                <a href="tel:+380955559533" class="link header__contact">095 555 95 33</a>
+              </a>
+            </li>
+            <li>
+              <a href="" class="link header__item"
+                >Готель
+                <svg width="24" height="24">
+                  <use href="./images/icon.svg#icon-phone"></use>
+                </svg>
+                <a href="tel:+380668491089" class="link header__contact">066 849 10 89</a>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://goo.gl/maps/5fHJMBBuwY2Lgnmz8"
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Україна, м. Полтава, вул. Маршала Бірюзова, 15</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="container">
-            <a href="./index.html" class="link">Міміно</a>
-            <ul class="list">
-                <li><a href="" class="link"></a>Головна</li>
-                <li><a href="" class="link"></a>Ресторан</li>
-                <li><a href="" class="link"></a>Готель</li>
-            </ul>
-            <ul class="list">
-                <li><a href="" class="link"></a>Telegram</li>
-                <li><a href="" class="link"></a>Facebook</li>
-                <li><a href="" class="link"></a>Instagram</li>
-            </ul>
-        </div>
+      <div class="container">
+        <a href="./index.html" class="link">Міміно</a>
+        <ul class="list">
+          <li><a href="" class="link"></a>Головна</li>
+          <li><a href="" class="link"></a>Ресторан</li>
+          <li><a href="" class="link"></a>Готель</li>
+        </ul>
+        <ul class="list">
+          <li><a href="" class="link"></a>Telegram</li>
+          <li><a href="" class="link"></a>Facebook</li>
+          <li><a href="" class="link"></a>Instagram</li>
+        </ul>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
