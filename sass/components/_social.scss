@@ -6,3 +6,14 @@
         fill: $accent-color;
     }
 }
+
+.social__header {
+    @media screen and (max-width: 1279px) {
+            display: none;
+        }
+}
+
+.social__hero {
+   display: flex;
+   align-items: flex-end;
+}

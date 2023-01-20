@@ -1,5 +1,6 @@
 @import './utils/fonts';
 @import './utils/_variables';
+@import './utils/mixin';
 
 @import './base/base';
 @import './base/reset';
@@ -11,3 +12,7 @@
 @import './components/logo';
 @import './components/hero';
 @import './components/social';
+@import './components/button';
+@import './components/address';
+@import './components/common';
+@import './components/about_restourant';

@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   padding: 16px 15px 9px 15px;
   background-color: $temporary-bgc;
 
@@ -11,25 +10,23 @@
   }
 
   @media screen and (min-width: 1280px) {
-      padding: 0 85px;
+    padding: 24px 85px 33px 85px;
   }
 
   &__list {
     display: flex;
     gap: 20px;
 
-    @media screen and (min-width: 1024px){
-        gap: 80px;
+    @media screen and (min-width: 1024px) {
+      gap: 80px;
     }
   }
 
   &__item {
     display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 12px;
-
-        }
+    align-items: center;
+    justify-content: space-between;
+  }
   &__link {
     display: flex;
     font-weight: 500;
@@ -39,25 +36,25 @@
     fill: $accent-color;
 
     @media screen and (min-width: 1024px) {
-        font-size: 20px;
-        line-height: 1.2;
+      font-size: 20px;
+      line-height: 1.2;
     }
   }
 
   &__phone {
     @media screen and (min-width: 1024px) {
-        display: flex;
-        align-items: center;
-            justify-content: space-between;
-            padding: 8px;
-            border: 1px solid rgba(243, 198, 83, 0.7);
-            border-radius: 2px;
-            margin-left: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px;
+      border: 1px solid rgba(243, 198, 83, 0.7);
+      border-radius: 2px;
+      margin-left: 46px;
     }
-    
-        @media screen and (min-width: 1024px) {
-            margin-left: 40px;
-        }
+
+    @media screen and (min-width: 1024px) {
+      margin-left: 40px;
+    }
   }
   &__contact {
     @media screen and (max-width: 1023px) {
@@ -68,4 +65,4 @@
     line-height: 1.214;
     color: $white-color;
   }
-  }
+}

@@ -1,0 +1,28 @@
+.title {
+    @include visually-hidden;
+}
+
+.about {
+    padding-top: 16px;
+
+    &__subtitle {
+        margin-bottom: 12px;
+        font-family: 'Times New Roman';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.15;
+        color: $light-gray-text-color;
+    }
+
+    &__text {
+        margin-bottom: 28px;
+        font-weight: 600;
+            font-size: 12px;
+            line-height: 1.25;
+            color: $primary-gray-text-color;
+    }
+
+    &__text--accent {
+        color: $accent-secondary-color;
+    }
+}

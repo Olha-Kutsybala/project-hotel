@@ -8,7 +8,14 @@
   letter-spacing: 0.3em;
   color: $white-color;
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     font-size: 40px;
   }
+}
+
+.logo__about {
+  margin-bottom: 12px;
+  font-size: 40px;
+    line-height: 43px;
+    color: $logo-dark;
 }
