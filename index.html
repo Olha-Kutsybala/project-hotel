@@ -84,17 +84,24 @@
           <h2 class="hero__title">Ресторанно-готельний комплекс</h2>
           <p class="hero__subtitle">Смак життя 24/7</p>
           <div class="hero__box">
-            <a href="https://goo.gl/maps/5fHJMBBuwY2Lgnmz8" class="link address noshow-mobile" target="_blank"
-              rel="noopener noreferrer nofollow">
+            <a
+              href="https://goo.gl/maps/5fHJMBBuwY2Lgnmz8"
+              class="link address noshow-mobile"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
               <svg width="24" height="24" class="address__icon">
                 <use href="./images/icons.svg#icon-location"></use>
               </svg>
-              Україна, м. Полтава, вул. Маршала Бірюзова, 15</a>
+              Україна, м. Полтава, вул. Маршала Бірюзова, 15</a
+            >
             <div class="button__box">
-              <button type="button" class="button button__center hero__button">
+              <button type="button" class="button button__center hero__button" data-modal-open>
                 Забронювати столик
               </button>
-              <button type="button" class="button button__center">Забронювати номер</button>
+              <button type="button" class="button button__center" data-modal-open>
+                Забронювати номер
+              </button>
             </div>
           </div>
           <ul class="list social social__hero noshow-desktop">
@@ -162,11 +169,11 @@
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
             consequat duis enim velit mollit.
           </p>
-          <button type="button">Забронювати столик</button>
+          <button data-modal-open type="button">Забронювати столик</button>
           <a href="" class="link">Переглянути меню</a>
         </div>
       </section>
-      <section class="section ">
+      <section class="section">
         <div class="container">
           <h2 class="title">About our hotel</h2>
           <img src="" alt="" />
@@ -247,5 +254,49 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="modal__container">
+          <button class="modal__close" type="button" data-modal-close>
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <h2 class="modal__title">Забронювати столик</h2>
+          <form name="form__contact" autocomplete="on">
+            <div>
+              <input type="text" id="name" name="name" class="form__input" placeholder="Ваше ім’я"/>
+            </div>
+            <label for="name" class="form__label">На кого забронювати столик?</label>
+            <div>
+              <input type="tel" id="phone" name="phone" placeholder="+38 (___) ___-__-__" />
+              <label for="phone">Номер телефону</label>
+            </div>
+            <div>
+              <select name="number" id="number">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <label for="number">Столик на яку кількість осіб?</label>
+            </div>
+            <div>
+              <select name="date" id="date">
+                <option value="today">Сьогодні</option>
+              </select>
+              <label for="date">На яку дату бронювати?</label>
+            </div>
+            <button class="" type="submit">Оформити бронювання</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
