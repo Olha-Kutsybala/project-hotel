@@ -103,7 +103,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 16px 15px 9px 15px;
-  background-color: rgba(0, 0, 0, 0.65);
+  border: transparent;
 }
 @media screen and (min-width: 1024px) {
   .header {
@@ -212,7 +212,6 @@ img {
 .hero {
   text-align: center;
   color: #FFFFFF;
-  background-color: rgba(0, 0, 0, 0.65);
 }
 .hero__logo {
   font-size: 96px;
@@ -288,6 +287,19 @@ img {
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .hero__box {
     margin-bottom: 25px;
+  }
+}
+
+.bg-image {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../../images/hero-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../images/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .bg-image {
+    background-image: url(../../images/hero-mobile@2x.jpg);
   }
 }
 
@@ -461,11 +473,18 @@ img {
   position: relative;
   width: 100%;
   max-width: 414px;
-  height: 100%;
   max-height: 668px;
   padding: 60px 16px;
   background-color: #FFFDEE;
+  border-radius: 2px;
   overflow-y: auto;
+}
+@media screen and (min-width: 1024px) {
+  .modal__container {
+    max-width: 712px;
+    max-height: 638px;
+    padding: 60px;
+  }
 }
 .modal__title {
   margin-bottom: 40px;
@@ -477,7 +496,12 @@ img {
   letter-spacing: 0.05em;
   color: #000000;
 }
-
+@media screen and (min-width: 1024px) {
+  .modal__title {
+    font-size: 40px;
+    line-height: 1.15;
+  }
+}
 .modal__close {
   position: absolute;
   top: 16px;
@@ -489,19 +513,232 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
+.modal__button {
+  text-transform: uppercase;
+  padding: 20px 43px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  background-color: #000000;
+  border: 1px solid #F3C653;
+  border-radius: 2px;
+}
+.modal__button:hover, .modal__button:focus {
+  background-color: #F3C653;
+  color: #000000;
+}
+@media screen and (min-width: 1024px) {
+  .modal__button {
+    width: 100%;
+    padding: 18px 117px;
+    font-size: 24px;
+    line-height: 1.21;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form__tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 16px;
+  }
+}
 
 .form__label {
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 16px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.21;
   color: #C79002;
 }
+@media screen and (max-width: 1023px) {
+  .form__label__mobile--last {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .form__label {
+    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .form__label__tablet--last {
+    margin-bottom: 40px;
+  }
+}
 
-.form__input {
+.form__input,
+.form__select {
   width: 100%;
   height: 54px;
-  padding: 17px 12px;
+  padding: 16px 12px;
   margin-bottom: 8px;
   border: 1px solid #C79002;
   border-radius: 2px;
+  outline: none;
+}
+@media screen and (min-width: 1024px) {
+  .form__input,
+.form__select {
+    width: 288px;
+    height: 64px;
+  }
+}
+
+.form__input::-webkit-input-placeholder, .form__select::-webkit-input-placeholder {
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: #808080;
+}
+
+.form__input::-moz-placeholder, .form__select::-moz-placeholder {
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: #808080;
+}
+
+.form__input:-ms-input-placeholder, .form__select:-ms-input-placeholder {
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: #808080;
+}
+
+.form__input::-ms-input-placeholder, .form__select::-ms-input-placeholder {
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: #808080;
+}
+
+.form__input::placeholder,
+.form__select::placeholder,
+.form__option {
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: #808080;
+}
+@media screen and (min-width: 1024px) {
+  .form__input::-webkit-input-placeholder, .form__select::-webkit-input-placeholder {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .form__input::-moz-placeholder, .form__select::-moz-placeholder {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .form__input:-ms-input-placeholder, .form__select:-ms-input-placeholder {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .form__input::-ms-input-placeholder, .form__select::-ms-input-placeholder {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .form__input::placeholder,
+.form__select::placeholder,
+.form__option {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 30px 40px 59px;
+  background-color: #0E0C07;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 80px 122px 80px 154px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 80px 186px 80px 216px;
+  }
+}
+.footer__list {
+  margin-bottom: 32px;
+}
+.footer__item {
+  margin-bottom: 16px;
+}
+
+.footer__logo {
+  font-size: 40px;
+  color: #F3C653;
+}
+@media screen and (min-width: 1024px) {
+  .footer__logo {
+    font-size: 64px;
+  }
+}
+
+.footer__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #F3C653;
+}
+
+.footer__social {
+  display: block;
+  color: #F3C653;
+  fill: #F3C653;
+}
+
+.footer__social--color {
+  color: inherit;
+}
+
+.footer__social--block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 144px;
+  height: 40px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border: 0.5px solid #F3C653;
+  border-radius: 2px;
+}
+
+.footer__social--block:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */
