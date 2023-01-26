@@ -380,12 +380,13 @@
           <form name="form__reserve" autocomplete="on">
             <div class="form__tablet">
               <div>
-                <input
+                <input 
                   type="text"
                   id="name"
                   name="name"
                   class="form__input"
                   placeholder="Ваше ім’я"
+                  required 
                 />
                 <label for="name" class="form__label">На кого забронювати столик?</label>
               </div>
@@ -397,6 +398,8 @@
                   name="phone"
                   class="form__input"
                   placeholder="+38 (___) ___-__-__"
+                  required
+                  pattern="^((\+3|8|0)+([0-9]){10})$" 
                 />
                 <label for="phone" class="form__label">Номер телефону</label>
               </div>
@@ -404,7 +407,7 @@
             <div class="form__tablet">
               <div>
                 <select name="number" id="number" class="form__select form__option">
-                  <option value="2">2</option>
+                  <option class="" value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
@@ -417,7 +420,7 @@
                 <label for="number" class="form__label form__label__tablet--last">Столик на яку кількість осіб?</label>
               </div>
               <div>
-                <select name="date" id="date" class="form__select form-option">
+                <select name="date" id="date" class="form__select form__option">
                   <option value="today">Сьогодні</option>
                 </select>
                 <label for="date" class="form__label form__label__mobile--last form__label__tablet--last"
