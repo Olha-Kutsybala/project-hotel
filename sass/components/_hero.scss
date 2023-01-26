@@ -1,8 +1,6 @@
 .hero {
   text-align: center;
   color: $white-color;
-  
-  
 
   &__logo {
     font-size: 96px;
@@ -51,8 +49,8 @@
     }
   }
   &__address {
-      margin-left: auto;
-      margin-bottom: 70px;
+    margin-left: auto;
+    margin-bottom: 70px;
   }
 
   &__button {
@@ -64,32 +62,14 @@
   &__box {
     @media screen and (min-width: 1024px) {
       display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-    
+      align-items: center;
+      justify-content: space-between;
+    }
 
-    @media screen and (min-width: 1024px) and (max-width: 1279px){
-        margin-bottom: 25px;
-      }
-    
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+      margin-bottom: 25px;
+    }
   }
 }
 
-.bg-image {
-background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-url(../../images/hero-mobile.jpg);
-background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      & {
-        background-image: url(../../images/hero-mobile@2x.jpg);
-      }
-    }
-}
