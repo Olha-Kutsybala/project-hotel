@@ -1,16 +1,23 @@
 .header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 50;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 15px 9px 15px;
+  padding: 16px 15px 0 15px;
   border: transparent;
 
   @media screen and (min-width: 1024px) {
-    padding: 24px 47px 33px 47px;
+    padding: 24px 47px 0 47px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 24px 85px 33px 85px;
+    padding: 24px 85px 0 85px;
   }
 
   &__list {

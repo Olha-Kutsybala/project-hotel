@@ -72,27 +72,27 @@ img {
   .container {
     max-width: 414px;
     width: 100%;
-    padding: 0 15px 15px 20px;
   }
 }
 @media screen and (min-width: 1024px) {
   .container {
-    width: 1024px;
-    padding: 88px 47px 15px 47px;
+    max-width: 1024px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1280px;
-    padding: 64px 85px 64px 85px;
+    max-width: 1280px;
   }
 }
 
-.section {
-  width: 100%;
-}
-
 .header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 50;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,17 +102,17 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 16px 15px 9px 15px;
+  padding: 16px 15px 0 15px;
   border: transparent;
 }
 @media screen and (min-width: 1024px) {
   .header {
-    padding: 24px 47px 33px 47px;
+    padding: 24px 47px 0 47px;
   }
 }
 @media screen and (min-width: 1280px) {
   .header {
-    padding: 24px 85px 33px 85px;
+    padding: 24px 85px 0 85px;
   }
 }
 .header__list {
@@ -210,8 +210,22 @@ img {
 }
 
 .hero {
+  min-height: 740px;
+  padding: 64px 15px 20px 15px;
   text-align: center;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    min-height: 720px;
+    padding: 188px 47px 15px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    min-height: 720px;
+    padding: 164px 85px 64px;
+  }
 }
 .hero__logo {
   font-size: 96px;
@@ -219,8 +233,8 @@ img {
 }
 @media screen and (min-width: 1024px) {
   .hero__logo {
-    font-size: 128px;
     margin-bottom: 16px;
+    font-size: 128px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -712,10 +726,17 @@ img {
   color: #F3C653;
 }
 
-.footer__social {
-  display: block;
-  color: #F3C653;
-  fill: #F3C653;
+@media screen and (max-width: 1023px) {
+  .footer__social {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer__social {
+    display: block;
+    color: #F3C653;
+    fill: #F3C653;
+  }
 }
 
 .footer__social--color {

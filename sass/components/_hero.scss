@@ -1,14 +1,26 @@
 .hero {
+  min-height: 740px;
+  padding: 64px 15px 20px 15px;
   text-align: center;
   color: $white-color;
+
+  @media screen and (min-width: 1024px) {
+    min-height: 720px;
+    padding: 188px 47px 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-height: 720px;
+    padding: 164px 85px 64px;
+  }
 
   &__logo {
     font-size: 96px;
     margin-bottom: 24px;
 
     @media screen and (min-width: 1024px) {
-      font-size: 128px;
       margin-bottom: 16px;
+      font-size: 128px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -71,5 +83,3 @@
     }
   }
 }
-
-

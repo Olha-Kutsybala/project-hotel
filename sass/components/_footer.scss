@@ -1,62 +1,65 @@
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 30px 40px 59px;
-    background-color: $footer-bgc; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 30px 40px 59px;
+  background-color: $footer-bgc;
 
-    @media screen and (min-width: 1024px) {
-        padding: 80px 122px 80px 154px;
-    }
+  @media screen and (min-width: 1024px) {
+    padding: 80px 122px 80px 154px;
+  }
 
-        @media screen and (min-width: 1280px) {
-            padding: 80px 186px 80px 216px;
-        }
-    &__list {
-        margin-bottom: 32px;
-    }
+  @media screen and (min-width: 1280px) {
+    padding: 80px 186px 80px 216px;
+  }
+  &__list {
+    margin-bottom: 32px;
+  }
 
-        &__item {
-            margin-bottom: 16px;
-        }
-
+  &__item {
+    margin-bottom: 16px;
+  }
 }
 .footer__logo {
-        font-size: 40px;
-        color: $accent-color;
+  font-size: 40px;
+  color: $accent-color;
 
-        @media screen and (min-width: 1024px) {
-                font-size: 64px
-            }
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+  }
 }
 .footer__link {
-font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: $accent-color;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: $accent-color;
 }
 .footer__social {
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+  @media screen and (min-width: 1024px) {
     display: block;
     color: $accent-color;
-        fill: $accent-color;
+    fill: $accent-color;
+  }
 }
 
 .footer__social--color {
-    color: inherit;
-
+  color: inherit;
 }
 .footer__social--block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 144px;
-    height: 40px;
-    margin-bottom: 12px;
-    padding: 8px 12px;
-    border: 0.5px solid $accent-color;
-        border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 144px;
+  height: 40px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border: 0.5px solid $accent-color;
+  border-radius: 2px;
 }
 
 .footer__social--block:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
